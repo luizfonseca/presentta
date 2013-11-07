@@ -2,6 +2,15 @@ doctype 5
 html
   head
     title= title
+    link(rel='stylesheet', href='/stylesheets/normalize.css')
+    link(rel='stylesheet', href='/stylesheets/foundation.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    block header
     block content
+    block footer
+
+  script(src='/socket.io/socket.io.js')
+  script(src='/javascripts/jquery.js')
+  script(src='/javascripts/foundation.min.js')
+  script(src='/javascripts/application.js')

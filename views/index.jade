@@ -1,5 +1,24 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .row
+    .large-12.columns
+      h1 Presentta
+      p 
+        em sample chat application. Video and file support soon.
+
+
+
+
+  .row
+    .large-12.columns
+      form.chat(action='/' method='post')
+        .responses
+          em Welcome to the chat!
+          = chatbox
+      
+        label
+          |Send a message
+          input(type='text' name='msg' placeholder='type anything bro')
+
+        input(type='submit' value='Send' class='button small')
